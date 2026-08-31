@@ -1,0 +1,18 @@
+@import url("./root.css");
+@import url("./app.css");
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 16px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'JetBrains Mono', monospace;
+}
+

@@ -1,0 +1,85 @@
+:root {
+  --main-color: #fafafa;
+  --heading: hsl(from var(--main-color) h s calc(l - 85));
+  --paragraph: hsl(from var(--main-color) h s calc(l - 75));
+  --outer-border-color: hsl(from var(--main-color) h s calc(l - 10));
+  --inner-bg: hsl(from var(--main-color) h s calc(l - 5));
+  --inner-border-color: hsl(from var(--main-color) h s calc(l - 20));
+
+  --dark-main-color: #1a1a1a;
+  --dark-heading: hsl(from var(--dark-main-color) h s calc(l + 85));
+  --dark-paragraph: hsl(from var(--dark-main-color) h s calc(l + 75));
+  --dark-outer-border-color: hsl(from var(--dark-main-color) h s calc(l + 10));
+  --dark-inner-bg: hsl(from var(--dark-main-color) h s calc(l + 10));
+  --dark-inner-border-color: hsl(from var(--dark-main-color) h s calc(l + 20));
+}
+
+.light {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button {
+    color: var(--heading);
+  }
+
+  div,
+  p,
+  span,
+  label {
+    color: var(--paragraph);
+  }
+
+  .outer {
+    border: 1px solid var(--outer-border-color);
+    background-color: var(--main-color);
+  }
+
+  .inner {
+    border: 1px solid var(--inner-border-color);
+    background-color: var(--inner-bg);
+  }
+}
+
+.dark {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button {
+    color: var(--dark-heading);
+  }
+
+  div,
+  p,
+  span,
+  label {
+    color: var(--dark-paragraph);
+  }
+
+  .outer {
+    border: 1px solid var(--dark-outer-border-color);
+    background-color: var(--dark-main-color);
+  }
+
+  .inner {
+    border: 1px solid var(--dark-inner-border-color);
+    background-color: var(--dark-inner-bg);
+  }
+}
+
+
+
+/* -----Animation----- */
+button:hover {
+    cursor: pointer;
+    outline: 1px solid currentColor;
+}
+
+button:active {
+    transform: scale(95%);
+}
