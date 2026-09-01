@@ -1,5 +1,8 @@
 :root {
     --accent: tomato;
+    --easy: #77d14e;
+    --medium: #d1cf4e;
+    --hard: #d14e4e;
 }
 
 .page {
@@ -41,4 +44,57 @@
             }
         }
     }
+}
+
+#dashboard {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+
+    #dashboard-display {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        align-content: start;
+        gap: 1rem;
+        width: 100%;
+        max-width: 70rem;
+        padding: 1rem;
+    }
+}
+
+.codewars-link-container {
+    display: grid;
+    grid-template-columns: 4rem 1fr 4rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 20rem;
+    justify-self: center;
+    height: 4rem;
+    border-radius: 1rem;
+    text-decoration: none;
+
+    img, .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.5rem;
+        border: none;
+        font-size: 2.5rem;
+        color: gainsboro;
+    }
+}
+
+.easy {
+    color: var(--easy) !important;
+}
+
+.medium {
+    color: var(--medium) !important;
+}
+
+.hard {
+    color: var(--hard) !important;
 }

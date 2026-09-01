@@ -6,7 +6,7 @@ import { injection } from "./modules/Arow.mjs";
 import { Home } from "./components/Home.mjs";
 import { Dashboard } from "./components/Dashboard.mjs";
 
-const [activePage, setActivePage] = useState(Home());
+const [activePage, setActivePage] = useState(Dashboard());
 
 
 Arow.templateFun = () => `
