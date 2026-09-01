@@ -8,7 +8,7 @@ export function Home() {
                 <a href="https://www.codewars.com">
                     <button>codewars</button>
                 </a>
-                <button>solved provlems</button>
+                <button id="go-to-dashboard-button">solved provlems</button>
             </div>
         </header>
     </div>
